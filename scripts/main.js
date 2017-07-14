@@ -27,3 +27,16 @@ function squareTheNumbers(nums) {
     squares = nums.map(square);
     console.log(squares);
 }
+
+
+
+function coolTemperature(cities) {
+    var result = [];
+    cities.forEach(function (city){
+        var temp = city["temperature"];
+        if (temp <= 70) {
+            result.push(city);
+        }
+    });
+    console.log(result);
+}
