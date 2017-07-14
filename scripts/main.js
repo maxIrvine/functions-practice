@@ -35,7 +35,18 @@ function coolTemperature(cities) {
     cities.forEach(function (city){
         var temp = city["temperature"];
         if (temp <= 70) {
-            result.push(city);
+            result.push(temp);
+        }
+    });
+    console.log(result);
+}
+
+function coolCities(cities) {
+    var result = [];
+    cities.forEach(function (city){
+        var temp = city["temperature"];
+        if (temp <= 70) {
+            result.push(city["name"]);
         }
     });
     console.log(result);
