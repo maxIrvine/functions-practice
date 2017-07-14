@@ -17,3 +17,13 @@ function evenNumber(nums) {
     });
     console.log(result);
 }
+
+function square(n) {
+    return n*n;
+}
+
+function squareTheNumbers(nums) {
+    var squares = [];
+    squares = nums.map(square);
+    console.log(squares);
+}
