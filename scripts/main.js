@@ -101,5 +101,24 @@ function acronym(words) {
         result.push(word.slice(0,1));
     });
     strJoin(result, '');
+}
 
+function range(min, max) {
+  var arr = [];
+  for (var i = min; i < max; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+function strMultiply(str, times) {
+    var arr = str.split('');
+    var result = [];
+
+}
+
+function box(width, height) {
+    var row = "*".repeat(width);
+    row += "\n";
+    var final = row.repeat(height);
 }
