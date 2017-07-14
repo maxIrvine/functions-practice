@@ -69,3 +69,11 @@ function callNTimes(times, fun) {
         fun();
     }
 }
+
+function product(nums) {
+    var result = 1;
+    nums.forEach(function (num) {
+        result = result * num;
+    });
+    console.log(result);
+}
