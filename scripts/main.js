@@ -51,3 +51,9 @@ function coolCities(cities) {
     });
     console.log(result);
 }
+
+function goodJob (people) {
+    people.forEach(function (person){
+        console.log("Good Job, " + person + "! \n");
+    });
+}
