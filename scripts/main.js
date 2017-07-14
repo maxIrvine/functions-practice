@@ -77,3 +77,14 @@ function product(nums) {
     });
     console.log(result);
 }
+
+function total(products) {
+    var result = [];
+    products.forEach(function (product){
+        result.push(product["price"]);
+    })
+    var total = result.reduce(function (a,b){
+        return a + b;
+    }, 0);
+    console.log(total);
+}
