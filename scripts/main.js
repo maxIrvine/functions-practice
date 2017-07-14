@@ -162,3 +162,27 @@ function sortByPrice(products) {
     });
     console.log(products);
 }
+
+function rotate(letter) {
+    if (letter === " "){
+        return letter;
+    }
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var index = alphabet.indexOf(letter);
+    var newIndex = index + 13;
+    var newLetter = "";
+    if (newIndex <= 26){
+        newLetter = alphabet.charAt(newIndex);
+    } else {
+        newIndex = newIndex - 26;
+        newLetter = alphabet.charAt(newIndex);
+    }
+    return newLetter;
+}
+
+function cipher(secret, offset) {
+    var toEncode = secret.split('');
+    var result = [];
+    result = toEncode.map(rotate);
+    console.log(strJoin(result, ''));
+}
