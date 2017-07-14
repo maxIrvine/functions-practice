@@ -194,7 +194,12 @@ function cipher(secret, offset) {
     console.log(strJoin(result, ''));
 }
 
-function map(arr, fun){
+function map(arr, fun) {
     var result = arr.map(fun);
+    console.log(result);
+}
+
+function filter(arr, fun) {
+    var result = arr.filter(fun);
     console.log(result);
 }
