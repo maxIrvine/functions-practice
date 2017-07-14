@@ -136,3 +136,16 @@ function sortAlphabetically(words) {
     });
     console.log(words);
 }
+
+function sortByLength(words) {
+    words.sort(function (a,b){
+        if (a.length < b.length){
+            return -1;
+        } else if (a.length > b.length) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    console.log(words);
+}
