@@ -94,3 +94,12 @@ function strJoin(strs, sep) {
     result = strs.join(sep);
     console.log(result);
 }
+
+function acronym(words) {
+    var result = [];
+    words.forEach(function (word){
+        result.push(word.slice(0,1));
+    });
+    strJoin(result, '');
+
+}
