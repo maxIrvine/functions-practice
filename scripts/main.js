@@ -112,9 +112,14 @@ function range(min, max) {
 }
 
 function strMultiply(str, times) {
-    var arr = str.split('');
     var result = [];
-
+    var ran = range(0, times);
+    var result = [];
+    ran.forEach(function (){
+        result.push(str);
+    });
+    var toReturn = strJoin(result, '');
+    console.log(toReturn);
 }
 
 function box(width, height) {
@@ -163,13 +168,13 @@ function sortByPrice(products) {
     console.log(products);
 }
 
-function rotate(letter) {
+function rotate(letter, offset) {
     if (letter === " "){
         return letter;
     }
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     var index = alphabet.indexOf(letter);
-    var newIndex = index + 13;
+    var newIndex = index + offset;
     var newLetter = "";
     if (newIndex <= 26){
         newLetter = alphabet.charAt(newIndex);
@@ -183,6 +188,8 @@ function rotate(letter) {
 function cipher(secret, offset) {
     var toEncode = secret.split('');
     var result = [];
-    result = toEncode.map(rotate);
+    result = toEncode.map(function (letter){
+        return rotate(letter, offset);
+    });
     console.log(strJoin(result, ''));
 }
