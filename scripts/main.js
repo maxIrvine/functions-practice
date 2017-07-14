@@ -122,3 +122,17 @@ function box(width, height) {
     row += "\n";
     var final = row.repeat(height);
 }
+
+function sortAlphabetically(words) {
+    words.sort(function (a,b){
+        if (a < b) {
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    console.log(words);
+}
