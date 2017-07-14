@@ -88,3 +88,9 @@ function total(products) {
     }, 0);
     console.log(total);
 }
+
+function strJoin(strs, sep) {
+    var result = "";
+    result = strs.join(sep);
+    console.log(result);
+}
