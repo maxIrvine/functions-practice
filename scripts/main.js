@@ -203,3 +203,8 @@ function filter(arr, fun) {
     var result = arr.filter(fun);
     console.log(result);
 }
+
+function reduce(arr, combine, initialValue) {
+    var result = arr.reduce(combine, initialValue);
+    console.log(result);
+}
