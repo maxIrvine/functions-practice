@@ -63,3 +63,9 @@ function call3Times(fun) {
     fun();
     fun();
 }
+
+function callNTimes(times, fun) {
+    for (var i=0;i<times;i++){
+        fun();
+    }
+}
