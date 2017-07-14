@@ -193,3 +193,8 @@ function cipher(secret, offset) {
     });
     console.log(strJoin(result, ''));
 }
+
+function map(arr, fun){
+    var result = arr.map(fun);
+    console.log(result);
+}
