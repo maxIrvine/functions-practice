@@ -57,3 +57,9 @@ function goodJob (people) {
         console.log("Good Job, " + person + "! \n");
     });
 }
+
+function call3Times(fun) {
+    fun();
+    fun();
+    fun();
+}
