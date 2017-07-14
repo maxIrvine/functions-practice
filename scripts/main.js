@@ -149,3 +149,16 @@ function sortByLength(words) {
     });
     console.log(words);
 }
+
+function sortByPrice(products) {
+    products.sort(function (a,b){
+        if (a["price"] < b["price"]){
+            return -1;
+        } else if(a["price"] > b["price"]){
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    console.log(products);
+}
